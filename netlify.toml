@@ -1,0 +1,4 @@
+# WerkHub deployment from the ZIP committed to this GitHub repository.
+[build]
+  command = "mkdir -p site && unzip -q -o WerkHub-12-Eigenstaendige-Websites-Netlify.zip -d site"
+  publish = "site"
