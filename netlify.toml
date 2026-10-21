@@ -1,4 +1,8 @@
-# WerkHub deployment from the ZIP committed to this GitHub repository.
+# WerkHub: publish the complete project ZIP uploaded from an iPhone.
+# Keep the ZIP filename exactly as specified in the command below.
+# For future website updates, replace that ZIP with the updated complete project.
+
 [build]
-  command = "mkdir -p site && unzip -q -o WerkHub-12-Eigenstaendige-Websites-Netlify.zip -d site"
-  publish = "site"
+  base = "."
+  command = "python3 -m zipfile -e WerkHub-Alles-Intern-Netlify.zip werkhub-site"
+  publish = "werkhub-site"
